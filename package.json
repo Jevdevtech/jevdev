@@ -1,0 +1,36 @@
+{
+  "name": "jev-solana-toolkit",
+  "version": "1.0.0",
+  "description": "Production-ready Solana Autonomous Agent Toolkit for Token Creation, Fee Claiming, Buyback & Burn, Treasury Sweeping, and Stock/Token Airdrops.",
+  "main": "src/index.js",
+  "bin": {
+    "jev": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "cli": "node src/cli.js",
+    "wallet:create": "node src/cli.js wallet create",
+    "test:price": "node src/cli.js token price",
+    "test:claim": "node src/cli.js fees claim",
+    "test:refund": "node src/cli.js wallet refund"
+  },
+  "keywords": [
+    "solana",
+    "autonomous-agent",
+    "pumpfun",
+    "buyback-and-burn",
+    "airdrop",
+    "treasury",
+    "spl-token"
+  ],
+  "author": "Jevdev Community",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/spl-token": "^0.4.8",
+    "@solana/web3.js": "^1.95.3",
+    "bs58": "^5.0.0",
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^2.7.0"
+  }
+}
