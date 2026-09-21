@@ -2,7 +2,20 @@
 
 A production-ready, modular Node.js toolkit for building **Solana Autonomous Trading & Revenue Agents**. 
 
-Designed for automated Solana token deployers, agentic fee distribution systems, buyback & burn mechanics, treasury management, and holder reward/stock airdrops.
+*Devved by Jevdev* for automated Solana token deployers, agentic fee distribution systems, buyback & burn mechanics, treasury management, and holder reward/stock airdrops.
+
+---
+
+## 🧠 Autonomous Lore & Dynamic Token Creation
+
+> **Note on Lore & Dynamic Metadata**:
+> In the Jev Autonomous Agent architecture, token parameters (name, ticker symbol, description, logo image, and metadata URI) are **not hardcoded**. 
+> Instead, developers feed context, lore, market sentiment, or custom prompts directly to Jev (the AI agent). Jev dynamically decides:
+> - **Token Name & Ticker Symbol** (e.g. `$JEV`, `$AI`, or custom meme ticker)
+> - **Metadata URI & Logo Generation**
+> - **Initial Buy Amount & Bonding Curve Launch Strategy**
+> 
+> All contract addresses, wallet keys, and mints in configuration files and examples (such as `YOUR_TREASURY_WALLET_ADDRESS_HERE` or `YOUR_TOKEN_MINT_ADDRESS_HERE`) are **EXAMPLE placeholder values** for developer demonstration purposes.
 
 ---
 
@@ -68,10 +81,10 @@ SOLANA_RPC_URL=https://mainnet.helius-rpc.com/?api-key=YOUR_HELIUS_KEY
 # Agent Private Key (Base58 encoded or JSON byte array)
 AGENT_PRIVATE_KEY=YOUR_BASE58_PRIVATE_KEY
 
-# Destination Treasury Wallet (Receives 50% creator fee split & SOL sweeps)
-TREASURY_ADDRESS=Gg7auhxN1nfMu74GT67Cya2BUb4xaV3BshSgUw34gZP1
+# Destination Treasury Wallet (EXAMPLE: Receives 50% creator fee split & SOL sweeps)
+TREASURY_ADDRESS=YOUR_TREASURY_WALLET_ADDRESS_HERE
 
-# Optional Web Event Monitor Endpoint
+# Optional Web Event Monitor Endpoint (Devved by Jevdev monitor)
 MONITOR_API_URL=https://your-monitor-app.onrender.com
 ```
 
@@ -164,4 +177,4 @@ async function runBurn(mintAddress) {
 ---
 
 ## 📄 License
-MIT License. Built for the Jevdev & Solana Autonomous Agent Developer Community.
+MIT License. Devved by Jevdev & Solana Autonomous Agent Developer Community.
